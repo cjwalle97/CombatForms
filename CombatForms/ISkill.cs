@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace CombatForms
 {
-    interface IDamagable
+    //Name: IDamagable
+    //Type: Interface
+    //Description: allows the Players and Demons to take damage
+    public interface IDamageable
     {
-        public void Damage(int);
+        void Damage(int damage);
     }
+    //Name: ISkill
+    //Type: Interface
+    //Description: 
     interface ISkill
     {
-        void Name(string);
-        void Damage(int);
+        string Name(string name);
+        int Damage(int Ow);
     }
 }
