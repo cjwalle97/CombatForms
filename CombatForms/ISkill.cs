@@ -8,7 +8,7 @@ namespace CombatForms
 {
     interface IDamagable
     {
-        void Damage(float);
+        public void Damage(int);
     }
     interface ISkill
     {

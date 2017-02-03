@@ -30,6 +30,9 @@ namespace CombatForms
         private Element Weakness;
         private Element Resistance;
 
+        public int TakeDamage(int Ouch)
+        {
 
+        }
     }
 }
