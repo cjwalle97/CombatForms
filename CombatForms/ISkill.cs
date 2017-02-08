@@ -18,8 +18,24 @@ namespace CombatForms
     //Description: 
     interface ISkill
     {
-        string Name(string name);
-        float Damage(float Ow);
+        void SkillTarget(Player target)
     }
-    
+
+    class Skill : ISkill
+    {
+        private string Name;
+        private Element Type;
+        private Player Target;
+
+        public Skill() { }
+        public Skill(string n, Element t)
+        {
+            Name = n; Type = t;
+        }
+        void ISkill.SkillTarget(Player target)
+        {
+            Target = target;
+        }
+
+    }
 }
