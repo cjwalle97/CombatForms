@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace CombatForms
 {
@@ -26,49 +27,43 @@ namespace CombatForms
     class Player : IDamageable
     {
         private string Name;
-        private int Health;
-        private int Mana;
-        private int Strength;
-        private int Magic;
-        private int Dexterity;
-        private int Agility;
-        private int Luck;
+        //private Stat Health;
+        //private Stat Mana;
+        //private Stat Strength;
+        //private Stat Magic;
+        //private Stat Dexterity;
+        //private Stat Agility;
+        //private Stat Luck;
         private Element Weakness;
         private Element Resistance;
         private Element AttackType;
         private bool Alive;
 
         public Player() { }
-        public Player(string n, int h, int e, int s, int m, int d, int a, int l, Element w, Element r, Element t)
+        public Player(string n,/* Stat h, Stat e, Stat s, Stat m, Stat d, Stat a, Stat l*/, Element w, Element r, Element t)
         {
-            Name = n; Health = h; Mana = e;
-            Strength = s; Magic = m; Dexterity = d;
-            Agility = a; Luck = l;
+            Name = n; //Health = h; Mana = e;
+            //Strength = s; Magic = m; Dexterity = d;
+            //Agility = a; Luck = l;
             Weakness = w; Resistance = r; AttackType = t;
         }
-        //Name: TakeDamage
-        //Type: Void
-        //Description: when invoked will cause the Player to take damage
-        public void Damage(int damage)
+        void IDamageable.Damage(int damage)
         {
-            Health -= damage;
-            if (Health <= 0)
-            {
-                Alive = false;
-            }
+
         }
+        
     }
 
     //Name: Demon
     //Type: Class
-    class Demon //: IDamageable
+    class Demon : Player, IDamageable
     {
         private string Name;
-        private int Strength;
-        private int Magic;
-        private int Dexterity;
-        private int Agility;
-        private int Luck;
+        //private int Strength;
+        //private int Magic;
+        //private int Dexterity;
+        //private int Agility;
+        //private int Luck;
         private Element Weakness;
         private Element Resistance;
         private Element AttackType;
@@ -77,10 +72,11 @@ namespace CombatForms
         public Demon() { }
         public Demon(string n, int s, int m, int d, int a, int l, Element w, Element r, Element t, Player o)
         {
-            Name = n; Strength = s; Magic = m;
-            Dexterity = d; Agility = a; Luck = l;
+            Name = n; //Strength = s; Magic = m;
+            //Dexterity = d; Agility = a; Luck = l;
             Weakness = w; Resistance = r; AttackType = t;
             Summoner = o;
         }
+        
     }
 }
