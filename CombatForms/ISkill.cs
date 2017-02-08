@@ -11,7 +11,7 @@ namespace CombatForms
     //Description: allows the Players and Demons to take damage
     public interface IDamageable
     {
-        void Damage(int damage);
+        void Damage(float damage);
     }
     //Name: ISkill
     //Type: Interface
@@ -19,6 +19,7 @@ namespace CombatForms
     interface ISkill
     {
         string Name(string name);
-        int Damage(int Ow);
+        float Damage(float Ow);
     }
+    
 }

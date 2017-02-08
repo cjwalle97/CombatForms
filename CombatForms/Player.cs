@@ -27,29 +27,21 @@ namespace CombatForms
     class Player : IDamageable
     {
         private string Name;
-        //private Stat Health;
-        //private Stat Mana;
-        //private Stat Strength;
-        //private Stat Magic;
-        //private Stat Dexterity;
-        //private Stat Agility;
-        //private Stat Luck;
+        private Stats PlayerStats;
         private Element Weakness;
         private Element Resistance;
         private Element AttackType;
         private bool Alive;
 
         public Player() { }
-        public Player(string n,/* Stat h, Stat e, Stat s, Stat m, Stat d, Stat a, Stat l*/, Element w, Element r, Element t)
+        public Player(string n, Stats p, Element w, Element r, Element a)
         {
-            Name = n; //Health = h; Mana = e;
-            //Strength = s; Magic = m; Dexterity = d;
-            //Agility = a; Luck = l;
-            Weakness = w; Resistance = r; AttackType = t;
+            Name = n; PlayerStats = p;
+            Weakness = w; Resistance = r; AttackType = a;
         }
-        void IDamageable.Damage(int damage)
+        void IDamageable.Damage(float damage)
         {
-
+            PlayerStats.TakeDamage(damage);
         }
         
     }
@@ -59,24 +51,17 @@ namespace CombatForms
     class Demon : Player, IDamageable
     {
         private string Name;
-        //private int Strength;
-        //private int Magic;
-        //private int Dexterity;
-        //private int Agility;
-        //private int Luck;
+        private Stats DemonStats;
         private Element Weakness;
         private Element Resistance;
         private Element AttackType;
         private Player Summoner;
 
         public Demon() { }
-        public Demon(string n, int s, int m, int d, int a, int l, Element w, Element r, Element t, Player o)
+        public Demon(string n, Element w, Element r, Element a, Player o)
         {
-            Name = n; //Strength = s; Magic = m;
-            //Dexterity = d; Agility = a; Luck = l;
-            Weakness = w; Resistance = r; AttackType = t;
-            Summoner = o;
+            Name = n; Weakness = w; Resistance = r; AttackType = a; Summoner = o;
         }
-        
+
     }
 }

@@ -6,14 +6,25 @@ using System.Threading.Tasks;
 
 namespace CombatForms
 {
-    class Stat
+    public class Stats
     {
-        private float Number;
+        private float HP;
+        private float MP;
+        private float STR;
+        private float MAG;
+        private float DEX;
+        private float AGI;
+        private float LUC;
 
-        public Stat() { }
-        public Stat(float n)
+        public Stats(float h, float m, float s, float i, float d, float a, float l) {
+            HP = h; MP = m; STR = s; MAG = i; DEX = d; AGI = a; LUC = l;
+        }
+        //Name: TakeDamage
+        //Type: void
+        //Description subtacts a float from HP
+        public void TakeDamage(float damage)
         {
-            Number = n;
+            HP -= damage;
         }
     }
 }
