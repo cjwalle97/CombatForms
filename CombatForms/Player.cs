@@ -24,7 +24,7 @@ namespace CombatForms
     }
     //Name: Player
     //Type: Class
-    class Player : IDamageable
+    class Player<T> : IDamageable, ICastSkills<T>
     {
         private string Name;
         private Stats PlayerStats;
@@ -43,25 +43,28 @@ namespace CombatForms
         {
             PlayerStats.TakeDamage(damage);
         }
-        
+        List<T> 
     }
 
     //Name: Demon
     //Type: Class
-    class Demon : Player, IDamageable
+    class Demon<T> : Player<T>, IDamageable//, ICastSkills<T>
     {
         private string Name;
         private Stats DemonStats;
         private Element Weakness;
         private Element Resistance;
         private Element AttackType;
-        private Player Summoner;
+        private Player<T> Summoner;
 
         public Demon() { }
-        public Demon(string n, Element w, Element r, Element a, Player o)
+        public Demon(string n, Element w, Element r, Element a, Player<T> o)
         {
             Name = n; Weakness = w; Resistance = r; AttackType = a; Summoner = o;
         }
-
+        void IDamageable.Damage(float damage)
+        {
+            DemonStats.TakeDamage(damage);
+        }
     }
 }

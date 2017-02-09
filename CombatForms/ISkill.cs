@@ -16,26 +16,51 @@ namespace CombatForms
     //Name: ISkill
     //Type: Interface
     //Description: 
-    interface ISkill
+    interface ISkill<T>
     {
-        void SkillTarget(Player target)
+        void SkillTargetPlayer(Player<T> target);
+
+        void SkillTargetDemon(Demon<T> target);
+    }
+    //Name: ICastSkills
+    //Type: interface
+    //Description: allows Players and Demon's to to cast skills 
+    interface ICastSkills<T>
+    {
+        List<T> SkillList();
     }
 
-    class Skill : ISkill
-    {
-        private string Name;
-        private Element Type;
-        private Player Target;
+    //class Skill : ISkill
+    //{
+    //    private string Name;
+    //    private Element Type;
+    //    private Player PlayerTarget;
+    //    private Demon DemonTarget;
 
-        public Skill() { }
-        public Skill(string n, Element t)
-        {
-            Name = n; Type = t;
-        }
-        void ISkill.SkillTarget(Player target)
-        {
-            Target = target;
-        }
+    //    public Skill() { }
+    //    public Skill(string n, Element t)
+    //    {
+    //        Name = n; Type = t;
+    //    }
+    //    void ISkill.SkillTargetPlayer(Player target)
+    //    {
+    //        PlayerTarget = target;
+    //    }
+    //    void ISkill.SkillTargetDemon(Demon target)
+    //    {
+    //        DemonTarget = target;
+    //    }
+    //}
 
-    }
-}
+    //class Agi : ISkill<T>
+    //{
+    //    private string Name = "Agi";
+    //    private Element Type = 0;
+
+    //    public Agi() { }
+    //    void ISkill.SkillTarget(Player<T> target)
+    //    {
+
+    //    }
+    //    public void Damage
+} 

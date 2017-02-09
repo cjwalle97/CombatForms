@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CombatForms
 {
-    public class Stats
+    public class Stats 
     {
         private float HP;
         private float MP;
