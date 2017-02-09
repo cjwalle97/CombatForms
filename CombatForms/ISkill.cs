@@ -63,4 +63,17 @@ namespace CombatForms
             Target = target;
         }
     }
+    class Bufu<T>: ISkill<T>
+    {
+        private string Name = "Bufu";
+        private float Cost = 8;
+        private Element Type 1;
+        private T Target;
+
+        public Bufu() { }
+        void ISkill<T>.SkillTarget(T target)
+        {
+            Target = target
+        }
+    }
 }
