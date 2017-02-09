@@ -73,7 +73,7 @@ namespace CombatForms
         public Bufu() { }
         void ISkill<T>.SkillTarget(T target)
         {
-            Target = target
+            Target = target;
         }
     }
 }

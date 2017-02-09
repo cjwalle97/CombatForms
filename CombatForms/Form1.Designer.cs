@@ -205,10 +205,12 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(824, 56);
+            this.textBox8.Location = new System.Drawing.Point(824, 47);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(199, 20);
             this.textBox8.TabIndex = 19;
+            this.textBox8.Text = "Enemy 3";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textBox9
@@ -217,6 +219,8 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(199, 20);
             this.textBox9.TabIndex = 20;
+            this.textBox9.Text = "Enemy 6";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox10
             // 
@@ -224,6 +228,8 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(199, 20);
             this.textBox10.TabIndex = 21;
+            this.textBox10.Text = "Enemy 5";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox11
             // 
@@ -231,6 +237,8 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(199, 20);
             this.textBox11.TabIndex = 22;
+            this.textBox11.Text = "Enemy 2";
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox12
             // 
@@ -238,6 +246,8 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(199, 20);
             this.textBox12.TabIndex = 23;
+            this.textBox12.Text = "Enemy 4";
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox13
             // 
@@ -245,6 +255,8 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(199, 20);
             this.textBox13.TabIndex = 24;
+            this.textBox13.Text = "Enemy 1";
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
             // 
@@ -256,23 +268,23 @@
             // 
             // numericUpDown7
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(207, 219);
+            this.numericUpDown7.Location = new System.Drawing.Point(1029, 32);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown7.Size = new System.Drawing.Size(52, 20);
             this.numericUpDown7.TabIndex = 26;
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(215, 227);
+            this.numericUpDown8.Location = new System.Drawing.Point(299, 32);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown8.Size = new System.Drawing.Size(52, 20);
             this.numericUpDown8.TabIndex = 27;
             // 
             // numericUpDown9
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(223, 235);
+            this.numericUpDown9.Location = new System.Drawing.Point(658, 32);
             this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown9.Size = new System.Drawing.Size(52, 20);
             this.numericUpDown9.TabIndex = 28;
             // 
             // numericUpDown10
@@ -331,7 +343,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "                 ";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
