@@ -39,6 +39,9 @@ namespace CombatForms
             Name = n; PlayerStats = p;
             Weakness = w; Resistance = r; AttackType = a;
         }
+        //Name: IDamageable.Damage
+        //Type: void
+        //Description: triggers the TakeDamage 
         void IDamageable.Damage(float damage)
         {
             PlayerStats.TakeDamage(damage);
@@ -47,7 +50,7 @@ namespace CombatForms
 
     //Name: Demon
     //Type: Class
-    class Demon : Player, IDamageable//, ICastSkills<T>
+    class Demon : IDamageable//, ICastSkills<T>
     {
         private string Name;
         private Stats DemonStats;
@@ -61,9 +64,13 @@ namespace CombatForms
         {
             Name = n; Weakness = w; Resistance = r; AttackType = a; Summoner = s;
         }
+        //Name:
+        //Type:
+        //Description:
         void IDamageable.Damage(float damage)
         {
             DemonStats.TakeDamage(damage);
         }
+
     }
 }

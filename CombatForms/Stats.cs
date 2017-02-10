@@ -21,21 +21,37 @@ namespace CombatForms
         }
         //Name: TakeDamage
         //Type: void
-        //Description subtacts a float from HP
+        //Description: subtracts a float from HP
         public void TakeDamage(float damage)
         {
             HP -= damage;
         }
+        //Name: PayCost
+        //Type: void
+        //Description: subtracts a float from MP 
+        public void PayCost(float cost)
+        {
+            MP -= cost;
+        }
+        //Name: AccessSTR
+        //Type: float
+        //Description: allows for easy access to the STR stat
         public float AccessSTR()
         {
             float stat = STR;
             return stat;
         }
+        //Name: AccessMAG
+        //Type: float
+        //Description: allows for easy access to the MAG stat
         public float AccessMAG()
         {
             float stat = MAG;
             return stat;
         }
+        //Name: AccessDEX
+        //Type: float
+        //Description: allows for easy access to the DEX stat
         public float AccessDEX()
         {
             float stat = DEX;

@@ -12,6 +12,9 @@ namespace CombatForms
 {
     public partial class Form1 : Form
     {
+        //public Stats FlynnStats = new Stats(200, 100, 22, 27, 22, 17, 17);
+
+        //Player Flynn = new Player("Flynn", FlynnStats, (Element)4, (Element)5, (Element)6);
         public Form1()
         {
             InitializeComponent();

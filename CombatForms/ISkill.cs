@@ -28,119 +28,147 @@ namespace CombatForms
         List<T> SkillList();
     }
 
-    class FireSkill<T> : ISkill<T>
+    //Name: Agi
+    //Type: class
+    //Description: a Skill with the Element of Fire that can be used by the Players and Demons
+    class Agi<T> : ISkill<T>
     {
         private string Name = "Agi";
         private float Cost = 8;
         private Element Type = 0;
         private T Target;
 
-        public FireSkill() { }
+        public Agi() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class IceSkill<T> : ISkill<T>
+    //Name: Bufu
+    //Type: class
+    //Description: a Skill with the Element of Ice that can be used by the Players and Demons
+    class Bufu<T> : ISkill<T>
     {
         private string Name = "Bufu";
         private float Cost = 8;
         private Element Type = (Element)1;
+        private float Damage;
         private T Target;
 
-        public IceSkill() { }
+        public Bufu() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class ElectricitySkill<T> : ISkill<T>
+    //Name: Zio
+    //Type: class
+    //Description: a Skill with the Element of Electricity that can be used by the Players and Demons
+    class Zio<T> : ISkill<T>
     {
         private string Name = "Zio";
         private float Cost = 8;
         private Element Type = (Element)2;
         private T Target;
 
-        public ElectricitySkill() { }
+        public Zio() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class ForceSkill<T> : ISkill<T>
+    //Name: ForceSkills
+    //Type: class
+    //Description: a Skill with the Element of Force that can be used by the Players and Demons
+    class Zan<T> : ISkill<T>
     {
         private string Name = "Zan";
         private float Cost = 8;
         private Element Type = (Element)3;
         private T Target;
 
-        public ForceSkill() { }
+        public Zan() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class DarkSkill<T> : ISkill<T>
+    //Name: Mudo
+    //Type: class
+    //Description: a Skill with the Element of Dark that can be used by Players and Demons
+    class Mudo<T> : ISkill<T>
     {
         private string Name = "Mudo";
         private float Cost = 8;
         private Element Type = (Element)4;
         private T Target;
 
-        public DarkSkill() { }
+        public Mudo() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
 
-    class LightSkill<T> : ISkill<T>
+    //Name: Hama
+    //Type: class
+    //Description: a Skill with the Element of Light that can be used by the Players and Demons
+    class Hama<T> : ISkill<T>
     {
         private string Name = "Hama";
         private float Cost = 8;
         private Element Type = (Element)5;
         private T Target;
 
-        public LightSkill() { }
+        public Hama() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class SlashSkill<T> : ISkill<T>
+    //Name: GramSlice
+    //Type: class
+    //Description: a Skill with the Element of Slash that can be used by the Players and Demons
+    class GramSlice<T> : ISkill<T>
     {
-        private string Name = "Cut";
+        private string Name = "Gram Slice";
         private float Cost = 8;
         private Element Type = (Element)6;
         private T Target;
-
-        public SlashSkill() { }
+        
+        public GramSlice() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class StrikeSkill<T> : ISkill<T>
+    //Name: StrikeSkill
+    //Type: class
+    //Description: a Skill with the Element of Strike that both the Players and Demons can use
+    class Lunge<T> : ISkill<T>
     {
-        private string Name = "Bash";
+        private string Name = "Lunge";
         private float Cost = 8;
         private Element Type = (Element)7;
         private T Target;
 
-        public StrikeSkill() { }
+        public Lunge() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
         }
     }
-    class PierceSkill<T> : ISkill<T>
+    //Name: NeedleShot
+    //Type: class
+    //Description: A skill with the Pierce Element that the Players and Demons can use
+    class NeedleShot<T> : ISkill<T>
     {
         private string Name = "Needle shot";
         private float Cost = 8;
         private Element Type = (Element)8;
         private T Target;
 
-        public PierceSkill() { }
+        public NeedleShot() { }
         void ISkill<T>.SkillTarget(T target)
         {
             Target = target;
