@@ -9,7 +9,7 @@ namespace CombatForms
 {
     //Name: Element
     //Type: enum
-    //Description: determines what element a Skill/Attack is, should a 
+    //Description: determines what element a Skill/Attack is
     public enum Element
     {
         Fire = 0,

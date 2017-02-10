@@ -26,5 +26,20 @@ namespace CombatForms
         {
             HP -= damage;
         }
+        public float AccessSTR()
+        {
+            float stat = STR;
+            return stat;
+        }
+        public float AccessMAG()
+        {
+            float stat = MAG;
+            return stat;
+        }
+        public float AccessDEX()
+        {
+            float stat = DEX;
+            return stat;
+        }
     }
 }
