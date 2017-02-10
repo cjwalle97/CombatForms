@@ -8,5 +8,6 @@ namespace CombatForms
 {
     class FSM
     {
+
     }
 }

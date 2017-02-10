@@ -19,8 +19,8 @@ namespace CombatForms
         Dark = 4,
         Light = 5,
         Slash = 6,
-        Pierce = 7,
-        Strike = 8,
+        Strike = 7,
+        Pierce = 8,
     }
     //Name: Player
     //Type: Class
