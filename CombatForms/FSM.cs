@@ -35,6 +35,21 @@ namespace CombatForms
         }
     }
 
+    class Column
+    {
+        private Player PlayerSlot;
+        private Demon DemonSlot;
+
+        public Column() { }
+        public Column(Player p, Demon d)
+        {
+            PlayerSlot = p;
+            DemonSlot = d;
+        }
+
+    }
+
+
     class FSM
     {
         
