@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CombatForms
 {
-    public enum States
+    public enum TurnStates
     {
         //TurnBegin: will update the UI before starting the current player's turn
         TurnBegin = 0,
@@ -16,6 +16,25 @@ namespace CombatForms
         //or moving on to the first Player of the next Party
         TurnEnd = 2,
     }
+
+    class State
+    {
+        public State() { }
+        public State(Enum e)
+        {
+            name = e.ToString;
+        }
+        public string name;
+        public delegate void OnEnter();
+        public delegate void OnExit();
+        public OnEnter onEnter;
+        public OnExit onExit;
+        public void AddEnterFunction(Delegate d)
+        {
+            onEnter += d as OnEnter;
+        }
+    }
+
     class FSM
     {
         
