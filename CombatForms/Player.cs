@@ -41,7 +41,7 @@ namespace CombatForms
         }
         //Name: IDamageable.Damage
         //Type: void
-        //Description: triggers the TakeDamage 
+        //Description: triggers the TakeDamage function
         void IDamageable.Damage(float damage)
         {
             PlayerStats.TakeDamage(damage);
@@ -57,16 +57,16 @@ namespace CombatForms
         private Element Weakness;
         private Element Resistance;
         private Element AttackType;
-        private Player Summoner;
+        private bool Alive;
 
         public Demon() { }
-        public Demon(string n, Element w, Element r, Element a, Player s)
+        public Demon(string n, Stats s ,Element w, Element r, Element a)
         {
-            Name = n; Weakness = w; Resistance = r; AttackType = a; Summoner = s;
+            Name = n; DemonStats = s;  Weakness = w; Resistance = r; AttackType = a;
         }
-        //Name:
-        //Type:
-        //Description:
+        //Name: IDamageable.Damage
+        //Type: void
+        //Description: triggers the TakeDamage function
         void IDamageable.Damage(float damage)
         {
             DemonStats.TakeDamage(damage);

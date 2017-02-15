@@ -22,7 +22,7 @@ namespace CombatForms
         public State() { }
         public State(Enum e)
         {
-            name = e.ToString;
+            name = e.ToString();
         }
         public string name;
         public delegate void OnEnter();
@@ -34,11 +34,14 @@ namespace CombatForms
             onEnter += d as OnEnter;
         }
     }
-
-    class Column
+    //Name: Column
+    //Type: class
+    //Description: 
+    class Column<T>
     {
         private Player PlayerSlot;
         private Demon DemonSlot;
+        private T Active;
 
         public Column() { }
         public Column(Player p, Demon d)
@@ -46,9 +49,11 @@ namespace CombatForms
             PlayerSlot = p;
             DemonSlot = d;
         }
-
+        public void SetActive (T targetable)
+        {
+            Active = targetable;
+        }
     }
-
 
     class FSM
     {

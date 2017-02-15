@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace CombatForms
 {
@@ -44,6 +45,26 @@ namespace CombatForms
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Hunter performs basic attack");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Hunter performs a Skill");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Demon performs a basic attack");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Demon performs a Skill");
         }
     }
 }
