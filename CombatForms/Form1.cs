@@ -66,5 +66,10 @@ namespace CombatForms
         {
             Debug.WriteLine("Demon performs a Skill");
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

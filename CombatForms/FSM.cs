@@ -8,13 +8,17 @@ namespace CombatForms
 {
     public enum TurnStates
     {
+        //GameStart: will start the game before moving on to TurnBegin
+        GameStart = 0,
         //TurnBegin: will update the UI before starting the current player's turn
-        TurnBegin = 0,
+        TurnBegin = 1,
         //PlayerTurn: will receive the commands for the current Player
-        PlayerTurn = 1,
+        PlayerTurn = 2,
         //TurnEnd: will execute the inputted commands before moving the current Player to the next Player in the Party
         //or moving on to the first Player of the next Party
-        TurnEnd = 2,
+        TurnEnd = 3,
+        //GameEnd: will end the game
+        GameEnd =9000,
     }
 
     class State
@@ -33,10 +37,14 @@ namespace CombatForms
         {
             onEnter += d as OnEnter;
         }
+        public void AddExitFunction(Delegate d)
+        {
+            onExit += d as OnExit;
+        }
     }
     //Name: Column
     //Type: class
-    //Description: 
+    //Description: Contains a single 
     class Column<T>
     {
         private Player PlayerSlot;
@@ -57,7 +65,9 @@ namespace CombatForms
 
     class FSM
     {
-        
+        //GameStart -> TurnStart: Automatic, when the Program starts
+        //TurnStart -> PlayerTurn: when a button is pressed
+        //PlayerTurn -> 
     }
     
 }

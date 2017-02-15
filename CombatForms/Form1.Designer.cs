@@ -34,16 +34,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -51,24 +45,17 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -119,6 +106,7 @@
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "Player 1";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -129,50 +117,22 @@
             this.textBox2.Text = "Demon 1";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(658, 473);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown1.TabIndex = 7;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(395, 473);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown2.TabIndex = 8;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(299, 473);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown3.TabIndex = 9;
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Location = new System.Drawing.Point(36, 473);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown4.TabIndex = 10;
-            // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(94, 493);
+            this.textBox4.Location = new System.Drawing.Point(94, 456);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(199, 20);
             this.textBox4.TabIndex = 12;
-            this.textBox4.Text = "Demon 2";
+            this.textBox4.Text = "Player 2";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(94, 456);
+            this.textBox5.Location = new System.Drawing.Point(94, 493);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(199, 20);
             this.textBox5.TabIndex = 13;
-            this.textBox5.Text = "Player 2";
+            this.textBox5.Text = "Demon 2";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
@@ -192,20 +152,6 @@
             this.textBox7.TabIndex = 15;
             this.textBox7.Text = "Demon 3";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(1029, 473);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown5.TabIndex = 16;
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Location = new System.Drawing.Point(766, 473);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown6.TabIndex = 17;
             // 
             // textBox8
             // 
@@ -270,59 +216,99 @@
             this.textBox3.Size = new System.Drawing.Size(727, 118);
             this.textBox3.TabIndex = 25;
             // 
-            // numericUpDown7
+            // textBox14
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(1029, 32);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown7.TabIndex = 26;
+            this.textBox14.Location = new System.Drawing.Point(33, 476);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(55, 20);
+            this.textBox14.TabIndex = 26;
             // 
-            // numericUpDown8
+            // textBox15
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(299, 32);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown8.TabIndex = 27;
+            this.textBox15.Location = new System.Drawing.Point(763, 29);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(55, 20);
+            this.textBox15.TabIndex = 27;
             // 
-            // numericUpDown9
+            // textBox16
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(658, 32);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown9.TabIndex = 28;
+            this.textBox16.Location = new System.Drawing.Point(392, 476);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(55, 20);
+            this.textBox16.TabIndex = 28;
             // 
-            // numericUpDown10
+            // textBox17
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(766, 32);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown10.TabIndex = 29;
+            this.textBox17.Location = new System.Drawing.Point(392, 29);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(55, 20);
+            this.textBox17.TabIndex = 29;
             // 
-            // numericUpDown11
+            // textBox18
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(395, 32);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown11.TabIndex = 30;
+            this.textBox18.Location = new System.Drawing.Point(299, 29);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(55, 20);
+            this.textBox18.TabIndex = 30;
             // 
-            // numericUpDown12
+            // textBox19
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(36, 32);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown12.TabIndex = 31;
+            this.textBox19.Location = new System.Drawing.Point(299, 476);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(55, 20);
+            this.textBox19.TabIndex = 31;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(658, 29);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(55, 20);
+            this.textBox20.TabIndex = 32;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(763, 476);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(55, 20);
+            this.textBox21.TabIndex = 33;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(658, 476);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(55, 20);
+            this.textBox22.TabIndex = 34;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(1029, 29);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(55, 20);
+            this.textBox23.TabIndex = 35;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(1029, 476);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(55, 20);
+            this.textBox24.TabIndex = 36;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 626);
-            this.Controls.Add(this.numericUpDown12);
-            this.Controls.Add(this.numericUpDown11);
-            this.Controls.Add(this.numericUpDown10);
-            this.Controls.Add(this.numericUpDown9);
-            this.Controls.Add(this.numericUpDown8);
-            this.Controls.Add(this.numericUpDown7);
+            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
@@ -330,16 +316,10 @@
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.numericUpDown6);
-            this.Controls.Add(this.numericUpDown5);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
@@ -348,18 +328,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "                 ";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,16 +341,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
@@ -390,12 +352,17 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox24;
     }
 }
 
