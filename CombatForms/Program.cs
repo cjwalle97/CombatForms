@@ -8,7 +8,7 @@ namespace CombatForms
 {
     static class Program
     {
-
+        public delegate void Handler();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,7 +19,8 @@ namespace CombatForms
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-
+           
+        
         }
     }
 }
