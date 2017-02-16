@@ -63,11 +63,41 @@ namespace CombatForms
         }
     }
 
-    class FSM
+    class FSM<T>
     {
         //GameStart -> TurnStart: Automatic, when the Program starts
         //TurnStart -> PlayerTurn: when a button is pressed
-        //PlayerTurn -> 
+        //PlayerTurn -> TurnEnd: Automatic, when the code connected to the button executes
+        //TurnEnd -> TurnStart: Automatic, when the UI updates
+        public FSM()
+        {
+            states = new Dictionary<string, State>();
+            var v = Enum.GetValues(typeof(T));
+            foreach (var e in v)
+            {
+                State s = new State(e as Enum);
+                states.Add(s.name, s);
+            }
+        }
+        Dictionary<string, State> states;
+        State cState;
+        public void  ChangeState(State state)
+        {
+            if(isValidTransition(state))
+            {
+                cState.onExit();
+                cState = state;
+                cState.onEnter();
+            }
+        }
+        public bool IsValidTransition(State to)
+        {
+            return states.ContainKey(s.name);
+        }
+        public void AddTransition(State to)
+        {
+
+        }
     }
-    
+
 }
