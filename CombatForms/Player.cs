@@ -73,4 +73,24 @@ namespace CombatForms
         }
 
     }
+    //Name: Column
+    //Type: class
+    //Description: Contains a single 
+    class Column<T>
+    {
+        private Player PlayerSlot;
+        private Demon DemonSlot;
+        private T Active;
+
+        public Column() { }
+        public Column(Player p, Demon d)
+        {
+            PlayerSlot = p;
+            DemonSlot = d;
+        }
+        public void SetActive(T targetable)
+        {
+            Active = targetable;
+        }
+    }
 }

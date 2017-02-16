@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace CombatForms
 {
@@ -42,26 +43,6 @@ namespace CombatForms
             onExit += d as OnExit;
         }
     }
-    //Name: Column
-    //Type: class
-    //Description: Contains a single 
-    class Column<T>
-    {
-        private Player PlayerSlot;
-        private Demon DemonSlot;
-        private T Active;
-
-        public Column() { }
-        public Column(Player p, Demon d)
-        {
-            PlayerSlot = p;
-            DemonSlot = d;
-        }
-        public void SetActive (T targetable)
-        {
-            Active = targetable;
-        }
-    }
 
     class FSM<T>
     {
@@ -69,6 +50,7 @@ namespace CombatForms
         //TurnStart -> PlayerTurn: when a button is pressed
         //PlayerTurn -> TurnEnd: Automatic, when the code connected to the button executes
         //TurnEnd -> TurnStart: Automatic, when the UI updates
+        // any state -> GameEnd: if either the quit game button is used or all Columns are dead of one party are dead
         public FSM()
         {
             states = new Dictionary<string, State>();
@@ -90,14 +72,42 @@ namespace CombatForms
                 cState.onEnter();
             }
         }
-        public bool IsValidTransition(State to)
+        public void AddTransition(State a, State b)
         {
-            return states.ContainKey(s.name);
+            cState = a;
+            ChangeState(b);
         }
-        public void AddTransition(State to)
+        public State GetState(T e)
         {
+            string key = (e as State).name;
+            return states[key];
+        }
 
+        private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
+        private bool isValidTransition(State to)
+        {
+            var validStates = transitions[cState.name];
+            if(validStates == null)
+            {
+                return false;
+            }
+            foreach (var state in validStates)
+            {
+                if (state == to)
+                {
+                    return true;
+                }
+               
+            }
+            return false;
+        }
+        public bool Start()
+        {
+            return true;
+        }
+        public bool Update()
+        {
+            return true;
         }
     }
-
 }
