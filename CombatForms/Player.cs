@@ -71,11 +71,10 @@ namespace CombatForms
         {
             DemonStats.TakeDamage(damage);
         }
-
     }
     //Name: Column
     //Type: class
-    //Description: Contains a single 
+    //Description: a unit that represents a Player and a Demon 
     class Column<T>
     {
         private Player PlayerSlot;
@@ -91,6 +90,20 @@ namespace CombatForms
         public void SetActive(T targetable)
         {
             Active = targetable;
+        }
+    }
+    //Name: Party
+    //Type: class
+    //Description: A unit that represents three Columns
+    class Party<T>
+    {
+        private Column<T> Center;
+        private Column<T> Right;
+        private Column<T> Left;
+
+        public Party(Column<T> c, Column<T> r, Column<T> l)
+        {
+            Center = c; Right = r; Left = l;
         }
     }
 }

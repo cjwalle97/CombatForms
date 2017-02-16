@@ -50,7 +50,7 @@ namespace CombatForms
         //TurnStart -> PlayerTurn: when a button is pressed
         //PlayerTurn -> TurnEnd: Automatic, when the code connected to the button executes
         //TurnEnd -> TurnStart: Automatic, when the UI updates
-        // any state -> GameEnd: if either the quit game button is used or all Columns are dead of one party are dead
+        // any state -> GameEnd: if either the quit game button is used or all Columns of one party are dead
         public FSM()
         {
             states = new Dictionary<string, State>();
