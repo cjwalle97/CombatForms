@@ -174,7 +174,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(199, 20);
             this.textBox8.TabIndex = 19;
-            this.textBox8.Text = "Enemy 3";
+            this.textBox8.Text = "Ashurakai";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
@@ -184,7 +184,7 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(199, 20);
             this.textBox9.TabIndex = 20;
-            this.textBox9.Text = "Enemy 6";
+            this.textBox9.Text = "Pyro Jack";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox10
@@ -193,7 +193,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(199, 20);
             this.textBox10.TabIndex = 21;
-            this.textBox10.Text = "Enemy 5";
+            this.textBox10.Text = "Oni";
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox11
@@ -202,8 +202,9 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(199, 20);
             this.textBox11.TabIndex = 22;
-            this.textBox11.Text = "Enemy 2";
+            this.textBox11.Text = "Ashurakai";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // textBox12
             // 
@@ -211,7 +212,7 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(199, 20);
             this.textBox12.TabIndex = 23;
-            this.textBox12.Text = "Enemy 4";
+            this.textBox12.Text = "Nue";
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox13
@@ -220,7 +221,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(199, 20);
             this.textBox13.TabIndex = 24;
-            this.textBox13.Text = "Enemy 1";
+            this.textBox13.Text = "Ashurakai";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
@@ -240,6 +241,7 @@
             this.textBox14.Size = new System.Drawing.Size(55, 20);
             this.textBox14.TabIndex = 26;
             this.textBox14.Text = "HP";
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // textBox15
             // 
@@ -256,6 +258,7 @@
             this.textBox16.Size = new System.Drawing.Size(55, 20);
             this.textBox16.TabIndex = 28;
             this.textBox16.Text = "HP";
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // textBox17
             // 

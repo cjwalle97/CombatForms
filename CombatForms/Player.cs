@@ -74,7 +74,7 @@ namespace CombatForms
     }
     //Name: Column
     //Type: class
-    //Description: a unit that represents a Player and a Demon 
+    //Description: a unit that represents a Player and a Demon
     class Column
     {
         private Player PlayerSlot;
