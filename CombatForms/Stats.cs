@@ -33,29 +33,40 @@ namespace CombatForms
         {
             MP -= cost;
         }
+        //Name:
+        //Type
+        //Description:
+        public float AccessHP()
+        {
+            return HP;
+        }
+        //Name: 
+        //Type:
+        //Description:
+        public float AccessMP()
+        {
+            return MP;
+        }
         //Name: AccessSTR
         //Type: float
         //Description: allows for easy access to the STR stat
         public float AccessSTR()
         {
-            float stat = STR;
-            return stat;
+            return STR;
         }
         //Name: AccessMAG
         //Type: float
         //Description: allows for easy access to the MAG stat
         public float AccessMAG()
         {
-            float stat = MAG;
-            return stat;
+            return MAG;
         }
         //Name: AccessDEX
         //Type: float
         //Description: allows for easy access to the DEX stat
         public float AccessDEX()
         {
-            float stat = DEX;
-            return stat;
+            return DEX;
         }
     }
 }

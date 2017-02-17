@@ -19,7 +19,7 @@ namespace CombatForms
         //or moving on to the first Player of the next Party
         TurnEnd = 3,
         //GameEnd: will end the game
-        GameEnd =9000,
+        GameEnd = 9000,
     }
 
     class State
@@ -63,9 +63,9 @@ namespace CombatForms
         }
         Dictionary<string, State> states;
         State cState;
-        public void  ChangeState(State state)
+        public void ChangeState(State state)
         {
-            if(isValidTransition(state))
+            if (isValidTransition(state))
             {
                 cState.onExit();
                 cState = state;
@@ -77,37 +77,37 @@ namespace CombatForms
             cState = a;
             ChangeState(b);
         }
-        public State GetState(T e)
+        public State GetState(T e)k
         {
             string key = (e as State).name;
             return states[key];
         }
 
-        private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
-        private bool isValidTransition(State to)
+    private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
+    private bool isValidTransition(State to)
+    {
+        var validStates = transitions[cState.name];
+        if (validStates == null)
         {
-            var validStates = transitions[cState.name];
-            if(validStates == null)
-            {
-                return false;
-            }
-            foreach (var state in validStates)
-            {
-                if (state == to)
-                {
-                    return true;
-                }
-               
-            }
             return false;
         }
-        public bool Start()
+        foreach (var state in validStates)
         {
-            return true;
+            if (state == to)
+            {
+                return true;
+            }
+
         }
-        public bool Update()
-        {
-            return true;
-        }
+        return false;
+    }
+    public bool Start()
+    {
+        return true;
+    }
+    public bool Update()
+    {
+        return true;
     }
 }
+

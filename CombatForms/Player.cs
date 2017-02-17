@@ -87,7 +87,7 @@ namespace CombatForms
             PlayerSlot = p;
             DemonSlot = d;
         }
-        public void SetActive(T targetable)
+        public void SetActive(  T targetable)
         {
             Active = targetable;
         }
