@@ -24,7 +24,7 @@ namespace CombatForms
     }
     //Name: Player
     //Type: Class
-    class Player : IDamageable//, ICastSkills<T>
+    class Player : IDamageable
     {
         private string Name;
         private Stats PlayerStats;
@@ -50,7 +50,7 @@ namespace CombatForms
 
     //Name: Demon
     //Type: Class
-    class Demon : IDamageable//, ICastSkills<T>
+    class Demon : IDamageable
     {
         private string Name;
         private Stats DemonStats;
@@ -75,11 +75,10 @@ namespace CombatForms
     //Name: Column
     //Type: class
     //Description: a unit that represents a Player and a Demon 
-    class Column<T>
+    class Column
     {
         private Player PlayerSlot;
         private Demon DemonSlot;
-        private T Active;
 
         public Column() { }
         public Column(Player p, Demon d)
@@ -87,21 +86,18 @@ namespace CombatForms
             PlayerSlot = p;
             DemonSlot = d;
         }
-        public void SetActive(  T targetable)
-        {
-            Active = targetable;
-        }
     }
     //Name: Party
     //Type: class
     //Description: A unit that represents three Columns
-    class Party<T>
+    class Party
     {
-        private Column<T> Center;
-        private Column<T> Right;
-        private Column<T> Left;
+        private Column Center;
+        private Column Right;
+        private Column Left;
+        private Column Active;
 
-        public Party(Column<T> c, Column<T> r, Column<T> l)
+        public Party(Column c, Column r, Column l)
         {
             Center = c; Right = r; Left = l;
         }

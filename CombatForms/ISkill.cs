@@ -20,13 +20,6 @@ namespace CombatForms
     {
         void SkillTarget(T target);
     }
-    //Name: ICastSkills
-    //Type: interface
-    //Description : allows Players and Demon's to to cast skills by accessing a list
-    interface ICastSkills<T>
-    {
-        List<T> SkillList();
-    }
 
     //Name: Agi
     //Type: class

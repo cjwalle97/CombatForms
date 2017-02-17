@@ -37,7 +37,12 @@ namespace CombatForms
         static Demon JackFrost = new Demon("Jack Frost", JackStats, (Element)0, (Element)1, (Element)7);
         static Demon Raiju = new Demon("Raiju", RaijuStats, (Element)3, (Element)2, (Element)6);
 
-        Column<> PlayerColumnCenter = new Column<T>(Flynn, Nekomata);
+        static Column PlayerColumnCenter = new Column(Flynn, Nekomata);
+        static Column PlayerColumnRight = new Column(Hitoshura, Raiju);
+        static Column PlayerColumnLeft = new Column(Nanashi, JackFrost);
+
+        Party PlayerParty = new Party(PlayerColumnCenter, PlayerColumnRight, PlayerColumnLeft);
+
         public Form1()
         {
             InitializeComponent();
@@ -51,22 +56,25 @@ namespace CombatForms
         private void button1_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Hunter performs basic attack");
-            textBox3.Text = "hunter performs basic attack";
+            textBox3.Text = "Hunter performs basic attack";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Hunter performs a Skill");
+            textBox3.Text = "Hunter performs a Skill";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Demon performs a basic attack");
+            textBox3.Text = "Demon performs a basic attack";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Demon performs a Skill");
+            textBox3.Text = "Demon performs a Skill";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

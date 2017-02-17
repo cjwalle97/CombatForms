@@ -77,37 +77,37 @@ namespace CombatForms
             cState = a;
             ChangeState(b);
         }
-        public State GetState(T e)k
+        public State GetState(T e)
         {
             string key = (e as State).name;
             return states[key];
         }
 
-    private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
-    private bool isValidTransition(State to)
-    {
-        var validStates = transitions[cState.name];
-        if (validStates == null)
+        private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
+        private bool isValidTransition(State to)
         {
+            var validStates = transitions[cState.name];
+            if (validStates == null)
+            {
+                return false;
+            }
+            foreach (var state in validStates)
+            {
+                if (state == to)
+                {
+                    return true;
+                }
+
+            }
             return false;
         }
-        foreach (var state in validStates)
+        public bool Start()
         {
-            if (state == to)
-            {
-                return true;
-            }
-
+            return true;
         }
-        return false;
-    }
-    public bool Start()
-    {
-        return true;
-    }
-    public bool Update()
-    {
-        return true;
+        public bool Update()
+        {
+            return true;
+        }
     }
 }
-
