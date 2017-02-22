@@ -45,30 +45,30 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.progressBar6 = new System.Windows.Forms.ProgressBar();
+            this.progressBar7 = new System.Windows.Forms.ProgressBar();
+            this.progressBar8 = new System.Windows.Forms.ProgressBar();
+            this.progressBar9 = new System.Windows.Forms.ProgressBar();
+            this.progressBar10 = new System.Windows.Forms.ProgressBar();
+            this.progressBar11 = new System.Windows.Forms.ProgressBar();
+            this.progressBar12 = new System.Windows.Forms.ProgressBar();
+            this.progressBar13 = new System.Windows.Forms.ProgressBar();
+            this.progressBar14 = new System.Windows.Forms.ProgressBar();
+            this.progressBar15 = new System.Windows.Forms.ProgressBar();
+            this.progressBar16 = new System.Windows.Forms.ProgressBar();
+            this.progressBar17 = new System.Windows.Forms.ProgressBar();
+            this.progressBar18 = new System.Windows.Forms.ProgressBar();
+            this.progressBar19 = new System.Windows.Forms.ProgressBar();
+            this.progressBar20 = new System.Windows.Forms.ProgressBar();
+            this.progressBar21 = new System.Windows.Forms.ProgressBar();
+            this.progressBar22 = new System.Windows.Forms.ProgressBar();
+            this.progressBar23 = new System.Windows.Forms.ProgressBar();
+            this.progressBar24 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // button1
@@ -234,229 +234,226 @@
             this.textBox3.Text = "Battle Text";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox14
+            // progressBar1
             // 
-            this.textBox14.Location = new System.Drawing.Point(33, 424);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(55, 20);
-            this.textBox14.TabIndex = 26;
-            this.textBox14.Text = "HP";
-            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            this.progressBar1.Location = new System.Drawing.Point(33, 79);
+            this.progressBar1.Maximum = 400;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(55, 20);
+            this.progressBar1.TabIndex = 26;
             // 
-            // textBox15
+            // progressBar2
             // 
-            this.textBox15.Location = new System.Drawing.Point(763, 79);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(55, 20);
-            this.textBox15.TabIndex = 27;
-            this.textBox15.Text = "HP";
+            this.progressBar2.Location = new System.Drawing.Point(299, 79);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(55, 20);
+            this.progressBar2.TabIndex = 27;
             // 
-            // textBox16
+            // progressBar3
             // 
-            this.textBox16.Location = new System.Drawing.Point(392, 424);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(55, 20);
-            this.textBox16.TabIndex = 28;
-            this.textBox16.Text = "HP";
-            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            this.progressBar3.Location = new System.Drawing.Point(299, 122);
+            this.progressBar3.Maximum = 200;
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(55, 20);
+            this.progressBar3.TabIndex = 28;
             // 
-            // textBox17
+            // progressBar4
             // 
-            this.textBox17.Location = new System.Drawing.Point(392, 79);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(55, 20);
-            this.textBox17.TabIndex = 29;
-            this.textBox17.Text = "HP";
+            this.progressBar4.Location = new System.Drawing.Point(33, 122);
+            this.progressBar4.Maximum = 300;
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(55, 20);
+            this.progressBar4.TabIndex = 29;
             // 
-            // textBox18
+            // progressBar5
             // 
-            this.textBox18.Location = new System.Drawing.Point(299, 79);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(55, 20);
-            this.textBox18.TabIndex = 30;
-            this.textBox18.Text = "MP";
+            this.progressBar5.Location = new System.Drawing.Point(392, 122);
+            this.progressBar5.Maximum = 300;
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(55, 20);
+            this.progressBar5.TabIndex = 30;
             // 
-            // textBox19
+            // progressBar6
             // 
-            this.textBox19.Location = new System.Drawing.Point(299, 424);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(55, 20);
-            this.textBox19.TabIndex = 31;
-            this.textBox19.Text = "MP";
+            this.progressBar6.Location = new System.Drawing.Point(392, 79);
+            this.progressBar6.Maximum = 350;
+            this.progressBar6.Name = "progressBar6";
+            this.progressBar6.Size = new System.Drawing.Size(55, 20);
+            this.progressBar6.TabIndex = 31;
             // 
-            // textBox20
+            // progressBar7
             // 
-            this.textBox20.Location = new System.Drawing.Point(658, 79);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(55, 20);
-            this.textBox20.TabIndex = 32;
-            this.textBox20.Text = "MP";
+            this.progressBar7.Location = new System.Drawing.Point(658, 122);
+            this.progressBar7.Maximum = 200;
+            this.progressBar7.Name = "progressBar7";
+            this.progressBar7.Size = new System.Drawing.Size(55, 20);
+            this.progressBar7.TabIndex = 32;
             // 
-            // textBox21
+            // progressBar8
             // 
-            this.textBox21.Location = new System.Drawing.Point(763, 424);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(55, 20);
-            this.textBox21.TabIndex = 33;
-            this.textBox21.Text = "HP";
+            this.progressBar8.Location = new System.Drawing.Point(658, 79);
+            this.progressBar8.Maximum = 150;
+            this.progressBar8.Name = "progressBar8";
+            this.progressBar8.Size = new System.Drawing.Size(55, 20);
+            this.progressBar8.TabIndex = 33;
             // 
-            // textBox22
+            // progressBar9
             // 
-            this.textBox22.Location = new System.Drawing.Point(658, 424);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(55, 20);
-            this.textBox22.TabIndex = 34;
-            this.textBox22.Text = "MP";
+            this.progressBar9.Location = new System.Drawing.Point(763, 79);
+            this.progressBar9.Maximum = 200;
+            this.progressBar9.Name = "progressBar9";
+            this.progressBar9.Size = new System.Drawing.Size(55, 20);
+            this.progressBar9.TabIndex = 34;
             // 
-            // textBox23
+            // progressBar10
             // 
-            this.textBox23.Location = new System.Drawing.Point(1029, 79);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(55, 20);
-            this.textBox23.TabIndex = 35;
-            this.textBox23.Text = "MP";
+            this.progressBar10.Location = new System.Drawing.Point(763, 122);
+            this.progressBar10.Maximum = 300;
+            this.progressBar10.Name = "progressBar10";
+            this.progressBar10.Size = new System.Drawing.Size(55, 20);
+            this.progressBar10.TabIndex = 35;
             // 
-            // textBox24
+            // progressBar11
             // 
-            this.textBox24.Location = new System.Drawing.Point(1029, 424);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(55, 20);
-            this.textBox24.TabIndex = 36;
-            this.textBox24.Text = "MP";
+            this.progressBar11.Location = new System.Drawing.Point(1029, 122);
+            this.progressBar11.Maximum = 200;
+            this.progressBar11.Name = "progressBar11";
+            this.progressBar11.Size = new System.Drawing.Size(55, 20);
+            this.progressBar11.TabIndex = 36;
             // 
-            // textBox25
+            // progressBar12
             // 
-            this.textBox25.Location = new System.Drawing.Point(299, 122);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(55, 20);
-            this.textBox25.TabIndex = 37;
-            this.textBox25.Text = "MP";
+            this.progressBar12.Location = new System.Drawing.Point(1029, 79);
+            this.progressBar12.Maximum = 300;
+            this.progressBar12.Name = "progressBar12";
+            this.progressBar12.Size = new System.Drawing.Size(55, 20);
+            this.progressBar12.TabIndex = 37;
             // 
-            // textBox26
+            // progressBar13
             // 
-            this.textBox26.Location = new System.Drawing.Point(33, 79);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(55, 20);
-            this.textBox26.TabIndex = 38;
-            this.textBox26.Text = "HP";
+            this.progressBar13.Location = new System.Drawing.Point(33, 424);
+            this.progressBar13.Maximum = 250;
+            this.progressBar13.Name = "progressBar13";
+            this.progressBar13.Size = new System.Drawing.Size(55, 20);
+            this.progressBar13.TabIndex = 38;
+            this.progressBar13.Click += new System.EventHandler(this.progressBar13_Click);
             // 
-            // textBox27
+            // progressBar14
             // 
-            this.textBox27.Location = new System.Drawing.Point(392, 122);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(55, 20);
-            this.textBox27.TabIndex = 39;
-            this.textBox27.Text = "HP";
+            this.progressBar14.Location = new System.Drawing.Point(33, 466);
+            this.progressBar14.Maximum = 200;
+            this.progressBar14.Name = "progressBar14";
+            this.progressBar14.Size = new System.Drawing.Size(55, 20);
+            this.progressBar14.TabIndex = 39;
             // 
-            // textBox28
+            // progressBar15
             // 
-            this.textBox28.Location = new System.Drawing.Point(299, 466);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(55, 20);
-            this.textBox28.TabIndex = 40;
-            this.textBox28.Text = "MP";
+            this.progressBar15.Location = new System.Drawing.Point(763, 466);
+            this.progressBar15.Maximum = 350;
+            this.progressBar15.Name = "progressBar15";
+            this.progressBar15.Size = new System.Drawing.Size(55, 20);
+            this.progressBar15.TabIndex = 40;
             // 
-            // textBox29
+            // progressBar16
             // 
-            this.textBox29.Location = new System.Drawing.Point(33, 466);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(55, 20);
-            this.textBox29.TabIndex = 41;
-            this.textBox29.Text = "HP";
+            this.progressBar16.Location = new System.Drawing.Point(763, 424);
+            this.progressBar16.Maximum = 400;
+            this.progressBar16.Name = "progressBar16";
+            this.progressBar16.Size = new System.Drawing.Size(55, 20);
+            this.progressBar16.TabIndex = 41;
             // 
-            // textBox30
+            // progressBar17
             // 
-            this.textBox30.Location = new System.Drawing.Point(392, 466);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(55, 20);
-            this.textBox30.TabIndex = 42;
-            this.textBox30.Text = "HP";
+            this.progressBar17.Location = new System.Drawing.Point(658, 466);
+            this.progressBar17.Maximum = 150;
+            this.progressBar17.Name = "progressBar17";
+            this.progressBar17.Size = new System.Drawing.Size(55, 20);
+            this.progressBar17.TabIndex = 42;
             // 
-            // textBox31
+            // progressBar18
             // 
-            this.textBox31.Location = new System.Drawing.Point(658, 466);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(55, 20);
-            this.textBox31.TabIndex = 43;
-            this.textBox31.Text = "MP";
+            this.progressBar18.Location = new System.Drawing.Point(658, 424);
+            this.progressBar18.Maximum = 200;
+            this.progressBar18.Name = "progressBar18";
+            this.progressBar18.Size = new System.Drawing.Size(55, 20);
+            this.progressBar18.TabIndex = 43;
             // 
-            // textBox32
+            // progressBar19
             // 
-            this.textBox32.Location = new System.Drawing.Point(658, 122);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(55, 20);
-            this.textBox32.TabIndex = 44;
-            this.textBox32.Text = "MP";
+            this.progressBar19.Location = new System.Drawing.Point(299, 424);
+            this.progressBar19.Maximum = 250;
+            this.progressBar19.Name = "progressBar19";
+            this.progressBar19.Size = new System.Drawing.Size(55, 20);
+            this.progressBar19.TabIndex = 44;
             // 
-            // textBox33
+            // progressBar20
             // 
-            this.textBox33.Location = new System.Drawing.Point(763, 122);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(55, 20);
-            this.textBox33.TabIndex = 45;
-            this.textBox33.Text = "HP";
+            this.progressBar20.Location = new System.Drawing.Point(299, 466);
+            this.progressBar20.Maximum = 300;
+            this.progressBar20.Name = "progressBar20";
+            this.progressBar20.Size = new System.Drawing.Size(55, 20);
+            this.progressBar20.TabIndex = 45;
             // 
-            // textBox34
+            // progressBar21
             // 
-            this.textBox34.Location = new System.Drawing.Point(1029, 122);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(55, 20);
-            this.textBox34.TabIndex = 46;
-            this.textBox34.Text = "MP";
+            this.progressBar21.Location = new System.Drawing.Point(392, 424);
+            this.progressBar21.Maximum = 300;
+            this.progressBar21.Name = "progressBar21";
+            this.progressBar21.Size = new System.Drawing.Size(55, 20);
+            this.progressBar21.TabIndex = 46;
             // 
-            // textBox35
+            // progressBar22
             // 
-            this.textBox35.Location = new System.Drawing.Point(763, 466);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(55, 20);
-            this.textBox35.TabIndex = 47;
-            this.textBox35.Text = "HP";
+            this.progressBar22.Location = new System.Drawing.Point(392, 466);
+            this.progressBar22.Maximum = 350;
+            this.progressBar22.Name = "progressBar22";
+            this.progressBar22.Size = new System.Drawing.Size(55, 20);
+            this.progressBar22.TabIndex = 47;
             // 
-            // textBox36
+            // progressBar23
             // 
-            this.textBox36.Location = new System.Drawing.Point(1029, 466);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(55, 20);
-            this.textBox36.TabIndex = 48;
-            this.textBox36.Text = "MP";
+            this.progressBar23.Location = new System.Drawing.Point(1029, 466);
+            this.progressBar23.Maximum = 150;
+            this.progressBar23.Name = "progressBar23";
+            this.progressBar23.Size = new System.Drawing.Size(55, 20);
+            this.progressBar23.TabIndex = 48;
             // 
-            // textBox37
+            // progressBar24
             // 
-            this.textBox37.Location = new System.Drawing.Point(33, 122);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(55, 20);
-            this.textBox37.TabIndex = 49;
-            this.textBox37.Text = "HP";
+            this.progressBar24.Location = new System.Drawing.Point(1029, 424);
+            this.progressBar24.Name = "progressBar24";
+            this.progressBar24.Size = new System.Drawing.Size(55, 20);
+            this.progressBar24.TabIndex = 49;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1129, 633);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.progressBar24);
+            this.Controls.Add(this.progressBar23);
+            this.Controls.Add(this.progressBar22);
+            this.Controls.Add(this.progressBar21);
+            this.Controls.Add(this.progressBar20);
+            this.Controls.Add(this.progressBar19);
+            this.Controls.Add(this.progressBar18);
+            this.Controls.Add(this.progressBar17);
+            this.Controls.Add(this.progressBar16);
+            this.Controls.Add(this.progressBar15);
+            this.Controls.Add(this.progressBar14);
+            this.Controls.Add(this.progressBar13);
+            this.Controls.Add(this.progressBar12);
+            this.Controls.Add(this.progressBar11);
+            this.Controls.Add(this.progressBar10);
+            this.Controls.Add(this.progressBar9);
+            this.Controls.Add(this.progressBar8);
+            this.Controls.Add(this.progressBar7);
+            this.Controls.Add(this.progressBar6);
+            this.Controls.Add(this.progressBar5);
+            this.Controls.Add(this.progressBar4);
+            this.Controls.Add(this.progressBar3);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
@@ -500,30 +497,30 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.ProgressBar progressBar5;
+        private System.Windows.Forms.ProgressBar progressBar6;
+        private System.Windows.Forms.ProgressBar progressBar7;
+        private System.Windows.Forms.ProgressBar progressBar8;
+        private System.Windows.Forms.ProgressBar progressBar9;
+        private System.Windows.Forms.ProgressBar progressBar10;
+        private System.Windows.Forms.ProgressBar progressBar11;
+        private System.Windows.Forms.ProgressBar progressBar12;
+        private System.Windows.Forms.ProgressBar progressBar13;
+        private System.Windows.Forms.ProgressBar progressBar14;
+        private System.Windows.Forms.ProgressBar progressBar15;
+        private System.Windows.Forms.ProgressBar progressBar16;
+        private System.Windows.Forms.ProgressBar progressBar17;
+        private System.Windows.Forms.ProgressBar progressBar18;
+        private System.Windows.Forms.ProgressBar progressBar19;
+        private System.Windows.Forms.ProgressBar progressBar20;
+        private System.Windows.Forms.ProgressBar progressBar21;
+        private System.Windows.Forms.ProgressBar progressBar22;
+        private System.Windows.Forms.ProgressBar progressBar23;
+        private System.Windows.Forms.ProgressBar progressBar24;
     }
 }
 

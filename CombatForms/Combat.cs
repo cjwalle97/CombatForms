@@ -8,6 +8,6 @@ namespace CombatForms
 {
     class Combat
     {
-
+        
     }
 }

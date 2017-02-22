@@ -7,8 +7,25 @@ using System.Xml.Serialization;
 
 namespace CombatForms
 {
-    static class Program
+    class Program
     {
+        //static public State TurnBegin((TurnStates)1);
+
+        class StateBehavior
+        {
+            public void TurnBeginBehavior()
+            {
+                
+            }
+            public void PlayerTurnBehavior()
+            {
+
+            }
+            public void TurnEndBehavior()
+            {
+
+            }
+        }
         public delegate void Handler();
         /// <summary>
         /// The main entry point for the application.
@@ -20,7 +37,8 @@ namespace CombatForms
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            
+            FSM<TurnStates> fsm = new FSM<TurnStates>();
+
         }
     }
 }

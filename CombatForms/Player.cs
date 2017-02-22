@@ -46,6 +46,14 @@ namespace CombatForms
         {
             PlayerStats.TakeDamage(damage);
         }
+        public void IsAlive()
+        {
+            if()
+            {
+                Alive = false;
+            }
+            Alive = true;
+        }
     }
 
     //Name: Demon
@@ -58,6 +66,7 @@ namespace CombatForms
         private Element Resistance;
         private Element AttackType;
         private bool Alive;
+        private bool Active;
 
         public Demon() { }
         public Demon(string n, Stats s ,Element w, Element r, Element a)
@@ -95,8 +104,6 @@ namespace CombatForms
         private Column Center;
         private Column Right;
         private Column Left;
-        private Column Active;
-
         public Party(Column c, Column r, Column l)
         {
             Center = c; Right = r; Left = l;
