@@ -239,6 +239,8 @@
             this.progressBar1.Location = new System.Drawing.Point(33, 79);
             this.progressBar1.Maximum = 400;
             this.progressBar1.Name = "progressBar1";
+            this.progressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar1.RightToLeftLayout = true;
             this.progressBar1.Size = new System.Drawing.Size(55, 20);
             this.progressBar1.TabIndex = 26;
             // 
@@ -262,6 +264,8 @@
             this.progressBar4.Location = new System.Drawing.Point(33, 122);
             this.progressBar4.Maximum = 300;
             this.progressBar4.Name = "progressBar4";
+            this.progressBar4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar4.RightToLeftLayout = true;
             this.progressBar4.Size = new System.Drawing.Size(55, 20);
             this.progressBar4.TabIndex = 29;
             // 
@@ -270,6 +274,8 @@
             this.progressBar5.Location = new System.Drawing.Point(392, 122);
             this.progressBar5.Maximum = 300;
             this.progressBar5.Name = "progressBar5";
+            this.progressBar5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar5.RightToLeftLayout = true;
             this.progressBar5.Size = new System.Drawing.Size(55, 20);
             this.progressBar5.TabIndex = 30;
             // 
@@ -278,6 +284,8 @@
             this.progressBar6.Location = new System.Drawing.Point(392, 79);
             this.progressBar6.Maximum = 350;
             this.progressBar6.Name = "progressBar6";
+            this.progressBar6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar6.RightToLeftLayout = true;
             this.progressBar6.Size = new System.Drawing.Size(55, 20);
             this.progressBar6.TabIndex = 31;
             // 
@@ -302,6 +310,8 @@
             this.progressBar9.Location = new System.Drawing.Point(763, 79);
             this.progressBar9.Maximum = 200;
             this.progressBar9.Name = "progressBar9";
+            this.progressBar9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar9.RightToLeftLayout = true;
             this.progressBar9.Size = new System.Drawing.Size(55, 20);
             this.progressBar9.TabIndex = 34;
             // 
@@ -310,6 +320,8 @@
             this.progressBar10.Location = new System.Drawing.Point(763, 122);
             this.progressBar10.Maximum = 300;
             this.progressBar10.Name = "progressBar10";
+            this.progressBar10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar10.RightToLeftLayout = true;
             this.progressBar10.Size = new System.Drawing.Size(55, 20);
             this.progressBar10.TabIndex = 35;
             // 
@@ -334,6 +346,8 @@
             this.progressBar13.Location = new System.Drawing.Point(33, 424);
             this.progressBar13.Maximum = 250;
             this.progressBar13.Name = "progressBar13";
+            this.progressBar13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar13.RightToLeftLayout = true;
             this.progressBar13.Size = new System.Drawing.Size(55, 20);
             this.progressBar13.TabIndex = 38;
             this.progressBar13.Click += new System.EventHandler(this.progressBar13_Click);
@@ -343,6 +357,8 @@
             this.progressBar14.Location = new System.Drawing.Point(33, 466);
             this.progressBar14.Maximum = 200;
             this.progressBar14.Name = "progressBar14";
+            this.progressBar14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar14.RightToLeftLayout = true;
             this.progressBar14.Size = new System.Drawing.Size(55, 20);
             this.progressBar14.TabIndex = 39;
             // 
@@ -351,6 +367,8 @@
             this.progressBar15.Location = new System.Drawing.Point(763, 466);
             this.progressBar15.Maximum = 350;
             this.progressBar15.Name = "progressBar15";
+            this.progressBar15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar15.RightToLeftLayout = true;
             this.progressBar15.Size = new System.Drawing.Size(55, 20);
             this.progressBar15.TabIndex = 40;
             // 
@@ -359,6 +377,8 @@
             this.progressBar16.Location = new System.Drawing.Point(763, 424);
             this.progressBar16.Maximum = 400;
             this.progressBar16.Name = "progressBar16";
+            this.progressBar16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar16.RightToLeftLayout = true;
             this.progressBar16.Size = new System.Drawing.Size(55, 20);
             this.progressBar16.TabIndex = 41;
             // 
@@ -399,6 +419,8 @@
             this.progressBar21.Location = new System.Drawing.Point(392, 424);
             this.progressBar21.Maximum = 300;
             this.progressBar21.Name = "progressBar21";
+            this.progressBar21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar21.RightToLeftLayout = true;
             this.progressBar21.Size = new System.Drawing.Size(55, 20);
             this.progressBar21.TabIndex = 46;
             // 
@@ -407,6 +429,8 @@
             this.progressBar22.Location = new System.Drawing.Point(392, 466);
             this.progressBar22.Maximum = 350;
             this.progressBar22.Name = "progressBar22";
+            this.progressBar22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar22.RightToLeftLayout = true;
             this.progressBar22.Size = new System.Drawing.Size(55, 20);
             this.progressBar22.TabIndex = 47;
             // 

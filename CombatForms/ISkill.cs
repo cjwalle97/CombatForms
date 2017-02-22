@@ -11,7 +11,7 @@ namespace CombatForms
     //Description: allows the Players and Demons to take damage
     public interface IDamageable
     {
-        void Damage(float damage);
+        void Damage(int damage);
     }
     //Name: ISkill
     //Type: Interface
@@ -135,7 +135,7 @@ namespace CombatForms
             Target = target;
         }
     }
-    //Name: StrikeSkill
+    //Name: Lunge
     //Type: class
     //Description: a Skill with the Element of Strike that both the Players and Demons can use
     class Lunge<T> : ISkill<T>

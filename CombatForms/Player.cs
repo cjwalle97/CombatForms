@@ -42,18 +42,18 @@ namespace CombatForms
         //Name: IDamageable.Damage
         //Type: void
         //Description: triggers the TakeDamage function
-        void IDamageable.Damage(float damage)
+        void IDamageable.Damage(int damage)
         {
             PlayerStats.TakeDamage(damage);
         }
-        public void IsAlive()
-        {
-            if()
-            {
-                Alive = false;
-            }
-            Alive = true;
-        }
+        //public void IsAlive()
+        //{
+        //    if()
+        //    {
+        //        Alive = false;
+        //    }
+        //    Alive = true;
+        //}
     }
 
     //Name: Demon
@@ -76,7 +76,7 @@ namespace CombatForms
         //Name: IDamageable.Damage
         //Type: void
         //Description: triggers the TakeDamage function
-        void IDamageable.Damage(float damage)
+        void IDamageable.Damage(int damage)
         {
             DemonStats.TakeDamage(damage);
         }

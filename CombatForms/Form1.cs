@@ -74,7 +74,33 @@ namespace CombatForms
         {
             InitializeComponent();
         }
-
+        public void HPMPUpdate()
+        {
+            progressBar21.Value = FlynnStats.HP;
+            progressBar18.Value = FlynnStats.MP;
+            progressBar22.Value = NekomataStats.HP;
+            progressBar17.Value = NekomataStats.MP;
+            progressBar13.Value = NanashiStats.HP;
+            progressBar19.Value = NanashiStats.MP;
+            progressBar14.Value = JackStats.HP;
+            progressBar20.Value = JackStats.MP;
+            progressBar16.Value = HitoshuraStats.HP;
+            progressBar24.Value = HitoshuraStats.MP;
+            progressBar15.Value = RaijuStats.HP;
+            progressBar23.Value = RaijuStats.MP;
+            progressBar5.Value = Ashurakai1Stats.HP;
+            progressBar7.Value = Ashurakai1Stats.MP;
+            progressBar6.Value = NueStats.HP;
+            progressBar8.Value = NueStats.MP;
+            progressBar4.Value = Ashurakai2Stats.HP;
+            progressBar3.Value = Ashurakai2Stats.MP;
+            progressBar1.Value = OniStats.HP;
+            progressBar2.Value = OniStats.MP;
+            progressBar10.Value = Ashurakai3Stats.HP;
+            progressBar11.Value = Ashurakai3Stats.MP;
+            progressBar9.Value = PyroJackStats.HP;
+            progressBar12.Value = PyroJackStats.MP;
+        }
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
 
@@ -84,25 +110,28 @@ namespace CombatForms
         {
             Debug.WriteLine("Hunter performs basic attack");
             textBox3.Text = "Hunter performs basic attack, Hunter is now Active";
-
+            HPMPUpdate();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Hunter performs a Skill");
             textBox3.Text = "Hunter performs a Skill, Hunter is now Active";
+            HPMPUpdate();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Demon performs a basic attack");
             textBox3.Text = "Demon performs a basic attack, Demon is now Active";
+            HPMPUpdate();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("Demon performs a Skill");
             textBox3.Text = "Demon performs a Skill, Demon is now Active";
+            HPMPUpdate();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
