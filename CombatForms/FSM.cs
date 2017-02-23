@@ -9,17 +9,11 @@ namespace CombatForms
 {
     public enum TurnState
     {
-        //GameStart: will start the game before moving on to TurnBegin
-        GameStart = 0,
         //TurnBegin: will update the UI before starting the current player's turn
         TurnBegin = 1,
-        //PlayerTurn: will receive the commands for the current Player
-        PlayerTurn = 2,
         //TurnEnd: will execute the inputted commands before moving the current Player to the next Player in the Party
         //or moving on to the first Player of the next Party
         TurnEnd = 3,
-        //GameEnd: will end the game
-        GameEnd = 9000,
     }
 
     class State
@@ -46,6 +40,10 @@ namespace CombatForms
 
     class FSM<T>
     {
+        Dictionary<string, State> states;
+        private Dictionary<string, List<State>> transitions;
+        State cState;
+
         //GameStart -> TurnStart: Automatic, when the Program starts
         //TurnStart -> PlayerTurn: when a button is pressed
         //PlayerTurn -> TurnEnd: Automatic, when the code connected to the button executes
@@ -54,45 +52,42 @@ namespace CombatForms
         public FSM()
         {
             states = new Dictionary<string, State>();
+            transitions = new Dictionary<string, List<State>>();
             var v = Enum.GetValues(typeof(T));
             foreach (var e in v)
             {
                 State s = new State(e as Enum);
                 states.Add(s.name, s);
+                transitions.Add(s.name, new List<State>());
             }
+            cState = states.First().Value;
         }
-        Dictionary<string, State> states;
-        State cState;
+
         public void ChangeState(State state)
         {
             if (isValidTransition(state))
             {
-                cState.onExit();
+                //cState.onExit();
                 cState = state;
-                cState.onEnter();
+                //cState.onEnter();
             }
-        }
-        public bool AddState(State state)
-        {
-            if (transitions[state.name] == null)
-            {
-                transitions.Add(state.name, new List<State>());
-                return true;
-            }
-            return false;
-        }
-        public void AddTransition(State a, State b)
-        {
-            cState = a;
-            ChangeState(b);
-        }
-        public State GetState(T e)
-        {
-            string key = (e as State).name;
-            return states[key];
         }
 
-        private Dictionary<string, List<State>> transitions = new Dictionary<string, List<State>>();
+        public void AddTransition(string From, State To)
+        {
+            if (transitions.ContainsKey(From))
+            {
+                if (!transitions[From].Contains(To))
+                    transitions[From].Add(To);
+            }
+        }
+
+        public State GetState(T e)
+        {
+            State temp = new State(e as Enum);
+            return states[temp.name];
+        }
+
         private bool isValidTransition(State to)
         {
             var validStates = transitions[cState.name];
@@ -106,17 +101,8 @@ namespace CombatForms
                 {
                     return true;
                 }
-
             }
             return false;
-        }
-        public bool Start()
-        {
-            return true;
-        }
-        public bool Update()
-        {
-            return true;
         }
     }
 }

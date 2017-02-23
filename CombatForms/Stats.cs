@@ -8,30 +8,30 @@ namespace CombatForms
 {
     public class Stats 
     {
-        public int HP;
-        public int MP;
-        public float STR;
-        public float MAG;
-        public float DEX;
-        public float AGI;
-        public float LUC;
+        public int Health;
+        public int Mana;
+        public float Strength;
+        public float Magic;
+        public float Dexterity;
+        public float Agility;
+        public float Luck;
 
         public Stats(int h, int m, int s, int i, int d, int a, int l) {
-            HP = h; MP = m; STR = s; MAG = i; DEX = d; AGI = a; LUC = l;
+            Health = h; Mana = m; Strength = s; Magic = i; Dexterity = d; Agility = a; Luck = l;
         }
         //Name: TakeDamage
         //Type: void
-        //Description: subtracts a float from HP
+        //Description: subtracts a float from Health
         public void TakeDamage(int damage)
         {
-            HP -= damage;
+            Health -= damage;
         }
         //Name: PayCost
         //Type: void
-        //Description: subtracts a float from MP 
+        //Description: subtracts a float from Mana 
         public void PayCost(int cost)
         {
-            MP -= cost;
+            Mana -= cost;
         }
     }
 }

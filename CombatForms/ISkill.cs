@@ -18,7 +18,7 @@ namespace CombatForms
     //Description: 
     interface ISkill<T>
     {
-        void SkillTarget(T target);
+        void SkillCaster(T caster);
     }
 
     //Name: Agi
@@ -26,15 +26,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Fire that can be used by the Players and Demons
     class Agi<T> : ISkill<T>
     {
-        private string Name = "Agi";
-        private float Cost = 8;
-        private Element Type = 0;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Agi";
+        public float Cost = 8;
+        public Element Type = Element.Fire;
         public Agi() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: Bufu
@@ -42,16 +42,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Ice that can be used by the Players and Demons
     class Bufu<T> : ISkill<T>
     {
-        private string Name = "Bufu";
-        private float Cost = 8;
-        private Element Type = (Element)1;
-        private float Damage;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Bufu";
+        public float Cost = 8;
+        public Element Type = Element.Ice;
         public Bufu() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: Zio
@@ -59,15 +58,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Electricity that can be used by the Players and Demons
     class Zio<T> : ISkill<T>
     {
-        private string Name = "Zio";
-        private float Cost = 8;
-        private Element Type = (Element)2;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Zio";
+        public float Cost = 8;
+        public Element Type = Element.Electricity;
         public Zio() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: ForceSkills
@@ -75,15 +74,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Force that can be used by the Players and Demons
     class Zan<T> : ISkill<T>
     {
-        private string Name = "Zan";
-        private float Cost = 8;
-        private Element Type = (Element)3;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Zan";
+        public float Cost = 8;
+        public Element Type = Element.Force;
         public Zan() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: Mudo
@@ -91,15 +90,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Dark that can be used by Players and Demons
     class Mudo<T> : ISkill<T>
     {
-        private string Name = "Mudo";
-        private float Cost = 8;
-        private Element Type = (Element)4;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Mudo";
+        public float Cost = 8;
+        public Element Type = Element.Dark;
         public Mudo() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
 
@@ -108,15 +107,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Light that can be used by the Players and Demons
     class Hama<T> : ISkill<T>
     {
-        private string Name = "Hama";
-        private float Cost = 8;
-        private Element Type = (Element)5;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Hama";
+        public float Cost = 8;
+        public Element Type = Element.Light;
         public Hama() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: GramSlice
@@ -124,15 +123,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Slash that can be used by the Players and Demons
     class GramSlice<T> : ISkill<T>
     {
-        private string Name = "Gram Slice";
-        private float Cost = 8;
-        private Element Type = (Element)6;
-        private T Target;
-        
+        private T Caster;
+
+        public string Name = "Gram Slice";
+        public float Cost = 8;
+        public Element Type = Element.Slash;
         public GramSlice() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: Lunge
@@ -140,15 +139,15 @@ namespace CombatForms
     //Description: a Skill with the Element of Strike that both the Players and Demons can use
     class Lunge<T> : ISkill<T>
     {
-        private string Name = "Lunge";
-        private float Cost = 8;
-        private Element Type = (Element)7;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Lunge";
+        public float Cost = 8;
+        public Element Type = Element.Strike;
         public Lunge() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
     //Name: NeedleShot
@@ -156,15 +155,15 @@ namespace CombatForms
     //Description: A skill with the Pierce Element that the Players and Demons can use
     class NeedleShot<T> : ISkill<T>
     {
-        private string Name = "Needle shot";
-        private float Cost = 8;
-        private Element Type = (Element)8;
-        private T Target;
+        private T Caster;
 
+        public string Name = "Needle Shot";
+        public float Cost = 8;
+        public Element Type = Element.Pierce;
         public NeedleShot() { }
-        void ISkill<T>.SkillTarget(T target)
+        void ISkill<T>.SkillCaster(T caster)
         {
-            Target = target;
+            Caster = caster;
         }
     }
 

@@ -34,11 +34,19 @@ namespace CombatForms
         private bool Alive;
         private bool Active;
 
+        enum PlayerStates
+        {
+            init, idle, attack, dead, exit
+        }
+
+        FSM<PlayerStates> PlayerFSM;
+
         public Player() { }
         public Player(string n, Stats p, Element w, Element r, Element a)
         {
             Name = n; PlayerStats = p;
             Weakness = w; Resistance = r; AttackType = a;
+            PlayerFSM = new FSM<PlayerStates>();
         }
 
         public void CheckifAlive()
@@ -59,72 +67,6 @@ namespace CombatForms
         void IDamageable.Damage(int damage)
         {
             PlayerStats.TakeDamage(damage);
-        }
-        
-    }
-
-    //Name: Demon
-    //Type: Class
-    class Demon : IDamageable
-    {
-        private string Name;
-        private Stats DemonStats;
-        private Element Weakness;
-        private Element Resistance;
-        private Element AttackType;
-        private bool Alive;
-        private bool Active;
-
-        public Demon() { }
-        public Demon(string n, Stats d ,Element w, Element r, Element a)
-        {
-            Name = n; DemonStats = d;  Weakness = w; Resistance = r; AttackType = a;
-        }
-        public void Activate()
-        {
-            Active = true;
-        }
-        public void Deactivate()
-        {
-            Active = false;
-        }
-        //Name: IDamageable.Damage
-        //Type: void
-        //Description: triggers the TakeDamage function
-        void IDamageable.Damage(int damage)
-        {
-            if (Active == true)
-            {
-                DemonStats.TakeDamage(damage);
-            }
-        }
-    }
-    //Name: Column
-    //Type: class
-    //Description: a unit that represents a Player and a Demon
-    class Column
-    {
-        private Player PlayerSlot;
-        private Demon DemonSlot;
-
-        public Column() { }
-        public Column(Player p, Demon d)
-        {
-            PlayerSlot = p;
-            DemonSlot = d;
-        }
-    }
-    //Name: Party
-    //Type: class
-    //Description: A unit that represents three Columns
-    class Party
-    {
-        private Column Center;
-        private Column Right;
-        private Column Left;
-        public Party(Column c, Column r, Column l)
-        {
-            Center = c; Right = r; Left = l;
         }
     }
 }

@@ -31,20 +31,20 @@ namespace CombatForms
         static Stats OniStats = new Stats(400, 100, 32, 7, 17, 12, 22);
 
         //Player Party Members
-        static Player Flynn = new Player("Flynn", FlynnStats, (Element)4, (Element)5, (Element)6);
-        static Player Nanashi = new Player("Nanashi", NanashiStats, 0, (Element)2, (Element)8);
-        static Player Hitoshura = new Player("Hitoshura", HitoshuraStats, (Element)5, (Element)7, (Element)7);
-        static Demon Nekomata = new Demon("Nekomata", NekomataStats, (Element)2, (Element)3, (Element)6);
-        static Demon JackFrost = new Demon("Jack Frost", JackStats, (Element)0, (Element)1, (Element)7);
-        static Demon Raiju = new Demon("Raiju", RaijuStats, (Element)3, (Element)2, (Element)6);
+        static Player Flynn = new Player("Flynn", FlynnStats, Element.Dark, Element.Light, Element.Slash);
+        static Player Nanashi = new Player("Nanashi", NanashiStats, Element.Fire, Element.Electricity, Element.Pierce);
+        static Player Hitoshura = new Player("Hitoshura", HitoshuraStats, Element.Light, Element.Strike, Element.Strike);
+        static Demon Nekomata = new Demon("Nekomata", NekomataStats, Element.Electricity, Element.Force, Element.Slash);
+        static Demon JackFrost = new Demon("Jack Frost", JackStats, Element.Fire, Element.Ice, Element.Strike);
+        static Demon Raiju = new Demon("Raiju", RaijuStats, Element.Force, Element.Electricity, Element.Slash);
 
         //Enemy Party members
-        static Player Ashurakai1 = new Player("Ashurakai", Ashurakai1Stats, (Element)4, (Element)5, (Element)8);
-        static Player Ashurakai2 = new Player("Ashurakai", Ashurakai2Stats, (Element)4, (Element)5, (Element)8);
-        static Player Ashurakai3 = new Player("Ashurakai", Ashurakai3Stats, (Element)4, (Element)5, (Element)8);
-        static Demon Nue = new Demon("Nue", NueStats, (Element)3, (Element)2, (Element)6);
-        static Demon PyroJack = new Demon("Pyro Jack", PyroJackStats, (Element)1, 0, (Element)7);
-        static Demon Oni = new Demon("Oni", OniStats, (Element)2, (Element)7, (Element)7);
+        static Player Ashurakai1 = new Player("Ashurakai", Ashurakai1Stats, Element.Dark, Element.Light, Element.Pierce);
+        static Player Ashurakai2 = new Player("Ashurakai", Ashurakai2Stats, Element.Dark, Element.Light, Element.Pierce);
+        static Player Ashurakai3 = new Player("Ashurakai", Ashurakai3Stats, Element.Dark, Element.Light, Element.Pierce);
+        static Demon Nue = new Demon("Nue", NueStats, Element.Force, Element.Electricity, Element.Slash);
+        static Demon PyroJack = new Demon("Pyro Jack", PyroJackStats, Element.Ice, 0, Element.Strike);
+        static Demon Oni = new Demon("Oni", OniStats, Element.Electricity, Element.Strike, Element.Strike);
 
         //Player Columns
         static Column PlayerColumnCenter = new Column(Flynn, Nekomata);
@@ -64,30 +64,30 @@ namespace CombatForms
 
         public void HPMPUpdate()
         {
-            progressBar21.Value = FlynnStats.HP;
-            progressBar18.Value = FlynnStats.MP;
-            progressBar22.Value = NekomataStats.HP;
-            progressBar17.Value = NekomataStats.MP;
-            progressBar13.Value = NanashiStats.HP;
-            progressBar19.Value = NanashiStats.MP;
-            progressBar14.Value = JackStats.HP;
-            progressBar20.Value = JackStats.MP;
-            progressBar16.Value = HitoshuraStats.HP;
-            progressBar24.Value = HitoshuraStats.MP;
-            progressBar15.Value = RaijuStats.HP;
-            progressBar23.Value = RaijuStats.MP;
-            progressBar5.Value = Ashurakai1Stats.HP;
-            progressBar7.Value = Ashurakai1Stats.MP;
-            progressBar6.Value = NueStats.HP;
-            progressBar8.Value = NueStats.MP;
-            progressBar4.Value = Ashurakai2Stats.HP;
-            progressBar3.Value = Ashurakai2Stats.MP;
-            progressBar1.Value = OniStats.HP;
-            progressBar2.Value = OniStats.MP;
-            progressBar10.Value = Ashurakai3Stats.HP;
-            progressBar11.Value = Ashurakai3Stats.MP;
-            progressBar9.Value = PyroJackStats.HP;
-            progressBar12.Value = PyroJackStats.MP;
+            progressBar21.Value = FlynnStats.Health;
+            progressBar18.Value = FlynnStats.Mana;
+            progressBar22.Value = NekomataStats.Health;
+            progressBar17.Value = NekomataStats.Mana;
+            progressBar13.Value = NanashiStats.Health;
+            progressBar19.Value = NanashiStats.Mana;
+            progressBar14.Value = JackStats.Health;
+            progressBar20.Value = JackStats.Mana;
+            progressBar16.Value = HitoshuraStats.Health;
+            progressBar24.Value = HitoshuraStats.Mana;
+            progressBar15.Value = RaijuStats.Health;
+            progressBar23.Value = RaijuStats.Mana;
+            progressBar5.Value = Ashurakai1Stats.Health;
+            progressBar7.Value = Ashurakai1Stats.Mana;
+            progressBar6.Value = NueStats.Health;
+            progressBar8.Value = NueStats.Mana;
+            progressBar4.Value = Ashurakai2Stats.Health;
+            progressBar3.Value = Ashurakai2Stats.Mana;
+            progressBar1.Value = OniStats.Health;
+            progressBar2.Value = OniStats.Mana;
+            progressBar10.Value = Ashurakai3Stats.Health;
+            progressBar11.Value = Ashurakai3Stats.Mana;
+            progressBar9.Value = PyroJackStats.Health;
+            progressBar12.Value = PyroJackStats.Mana;
         }
         public Form1()
         {
