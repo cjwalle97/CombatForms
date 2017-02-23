@@ -21,7 +21,6 @@ namespace CombatForms
 
         FSM<ColumnStates> ColumnFSM;
 
-
         public Column() { }
         public Column(Player p, Demon d)
         {

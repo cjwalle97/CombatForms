@@ -23,6 +23,7 @@ namespace CombatForms
             init, idle, attack, dead, exit
         }
 
+        FSM<DemonStates> DemonFSM;
 
         public Demon() { }
         public Demon(string n, Stats d, Element w, Element r, Element a)
