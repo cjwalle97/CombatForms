@@ -9,19 +9,17 @@ namespace CombatForms
 {
     class Program
     {
-        //static public State TurnBegin((TurnStates)1);
-
         class StateBehavior
         {
-            public void TurnBeginBehavior()
-            {
-                
-            }
-            public void PlayerTurnBehavior()
+            static public void TurnBeginBehavior()
             {
 
             }
-            public void TurnEndBehavior()
+            static public void PlayerTurnBehavior()
+            {
+
+            }
+            static public void TurnEndBehavior()
             {
 
             }
@@ -33,12 +31,29 @@ namespace CombatForms
         [STAThread]
         static void Main()
         {
+            State GameStart = new State(TurnState.GameStart);
+            State TurnBegin = new State(TurnState.TurnBegin);
+            State PlayerTurn = new State(TurnState.PlayerTurn);
+            State TurnEnd = new State(TurnState.TurnEnd);
+            State GameEnd = new State(TurnState.GameEnd);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            FSM<TurnStates> fsm = new FSM<TurnStates>();
+            FSM<Enum> fsm = new FSM<Enum>();
 
+            fsm.AddTransition(GameStart, TurnBegin);
+            fsm.AddTransition(TurnBegin, PlayerTurn);
+            fsm.AddTransition(PlayerTurn, TurnEnd);
+            fsm.AddTransition(TurnEnd, TurnBegin);
+            fsm.AddTransition(TurnEnd, GameEnd);
+            fsm.AddTransition(TurnBegin, GameEnd);
+            fsm.AddTransition(PlayerTurn, GameEnd);
+
+            fsm.GetState(TurnState.TurnBegin).AddEnterFunction((Handler)StateBehavior.TurnBeginBehavior);
+            fsm.GetState(TurnState.PlayerTurn).AddEnterFunction((Handler)StateBehavior.PlayerTurnBehavior);
+            fsm.GetState(TurnState.TurnEnd).AddEnterFunction((Handler)StateBehavior.TurnEndBehavior);
         }
+
     }
 }

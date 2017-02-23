@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace CombatForms
 {
-    public enum TurnStates
+    public enum TurnState
     {
         //GameStart: will start the game before moving on to TurnBegin
         GameStart = 0,
@@ -71,6 +71,15 @@ namespace CombatForms
                 cState = state;
                 cState.onEnter();
             }
+        }
+        public bool AddState(State state)
+        {
+            if (transitions[state.name] == null)
+            {
+                transitions.Add(state.name, new List<State>());
+                return true;
+            }
+            return false;
         }
         public void AddTransition(State a, State b)
         {

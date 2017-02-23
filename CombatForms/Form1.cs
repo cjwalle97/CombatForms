@@ -11,17 +11,9 @@ using System.Diagnostics;
 
 namespace CombatForms
 {
-    /*Desired End Result: 
-     * Player1: "Flynn", 300, 200, 22, 27, 22, 17, 17, (Element) 4, (Element) 5, (Element) 6 ;
-     * Player2: "Nanashi", 250, 250, 12, 32, 17, 27, 17 (Element) 0, (Element) 2, (Element) 8;
-     * Player3: "Hitoshura", 400, 100, 32, 7, 32, 22, 12, (Element) 5, (Element) 7, (Element) 7;
-     * Demon1: "Nekomata", 350, 150, 27, 17, 27, 17, 17 (Element) 2, (Element) 3, (Element) 6; 
-     * Demon2: "Jack Frost", 200, 300, 12, 32, 17, 22, 17, (Element) 0, (Element) 1, (Element) 7;
-     * Demon3: "Raiju", 350, 150, 17, 12, 32, 27, 7, (Element) 3, (Element) 2, (Element) 6;
-     * 
-     */
     public partial class Form1 : Form
     {
+        //need to place all of the Player/Enemy Party code in a singleton
         //Player Party Stats
         static Stats FlynnStats = new Stats(300, 200, 22, 27, 22, 17, 17);
         static Stats NanashiStats = new Stats(250, 250, 12, 32, 17, 27, 17);
@@ -70,10 +62,6 @@ namespace CombatForms
         //Enemy Player
         Party EnemyParty = new Party(EnemyColumnCenter, EnemyColumnRight, EnemyColumnLeft);
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
         public void HPMPUpdate()
         {
             progressBar21.Value = FlynnStats.HP;
@@ -101,6 +89,11 @@ namespace CombatForms
             progressBar9.Value = PyroJackStats.HP;
             progressBar12.Value = PyroJackStats.MP;
         }
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
 
@@ -108,30 +101,54 @@ namespace CombatForms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
+            this.Enabled = false;
+            Form targetwindow = new TargetWindow();
+
             Debug.WriteLine("Hunter performs basic attack");
             textBox3.Text = "Hunter performs basic attack, Hunter is now Active";
             HPMPUpdate();
+
+            targetwindow.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
+            this.Enabled = false;
+            Form targetwindow = new TargetWindow();
+
             Debug.WriteLine("Hunter performs a Skill");
             textBox3.Text = "Hunter performs a Skill, Hunter is now Active";
             HPMPUpdate();
+
+            targetwindow.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
+            this.Enabled = false;
+            Form targetwindow = new TargetWindow();
+
             Debug.WriteLine("Demon performs a basic attack");
             textBox3.Text = "Demon performs a basic attack, Demon is now Active";
             HPMPUpdate();
+
+            targetwindow.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
+            this.Enabled = false;
+            Form targetwindow = new TargetWindow();
+
             Debug.WriteLine("Demon performs a Skill");
             textBox3.Text = "Demon performs a Skill, Demon is now Active";
             HPMPUpdate();
+
+            targetwindow.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -158,22 +175,10 @@ namespace CombatForms
         {
 
         }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
 
         }
-
-        private void textBox37_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void progressBar13_Click(object sender, EventArgs e)
         {
             

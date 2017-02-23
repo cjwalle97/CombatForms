@@ -32,12 +32,26 @@ namespace CombatForms
         private Element Resistance;
         private Element AttackType;
         private bool Alive;
+        private bool Active;
 
         public Player() { }
         public Player(string n, Stats p, Element w, Element r, Element a)
         {
             Name = n; PlayerStats = p;
             Weakness = w; Resistance = r; AttackType = a;
+        }
+
+        public void CheckifAlive()
+        {
+
+        }
+        public void Activate()
+        {
+            Active = true;
+        }
+        public void Deactivate()
+        {
+            Active = false;
         }
         //Name: IDamageable.Damage
         //Type: void
@@ -46,14 +60,7 @@ namespace CombatForms
         {
             PlayerStats.TakeDamage(damage);
         }
-        //public void IsAlive()
-        //{
-        //    if()
-        //    {
-        //        Alive = false;
-        //    }
-        //    Alive = true;
-        //}
+        
     }
 
     //Name: Demon
@@ -69,16 +76,27 @@ namespace CombatForms
         private bool Active;
 
         public Demon() { }
-        public Demon(string n, Stats s ,Element w, Element r, Element a)
+        public Demon(string n, Stats d ,Element w, Element r, Element a)
         {
-            Name = n; DemonStats = s;  Weakness = w; Resistance = r; AttackType = a;
+            Name = n; DemonStats = d;  Weakness = w; Resistance = r; AttackType = a;
+        }
+        public void Activate()
+        {
+            Active = true;
+        }
+        public void Deactivate()
+        {
+            Active = false;
         }
         //Name: IDamageable.Damage
         //Type: void
         //Description: triggers the TakeDamage function
         void IDamageable.Damage(int damage)
         {
-            DemonStats.TakeDamage(damage);
+            if (Active == true)
+            {
+                DemonStats.TakeDamage(damage);
+            }
         }
     }
     //Name: Column
