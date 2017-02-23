@@ -32,11 +32,8 @@ namespace CombatForms
         [STAThread]
         static void Main()
         {
-            //State GameStart = new State(TurnState.GameStart);
             //State TurnBegin = new State(TurnState.TurnBegin);
-            //State PlayerTurn = new State(TurnState.PlayerTurn);
             //State TurnEnd = new State(TurnState.TurnEnd);
-            //State GameEnd = new State(TurnState.GameEnd);
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());

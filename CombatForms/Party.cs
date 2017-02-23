@@ -14,6 +14,15 @@ namespace CombatForms
         private Column Center;
         private Column Right;
         private Column Left;
+
+        enum PartyStates
+        {
+            init, enter, idle, exit,
+        }
+
+
+        FSM<PartyStates> PartyFSM;
+
         public Party(Column c, Column r, Column l)
         {
             Center = c; Right = r; Left = l;

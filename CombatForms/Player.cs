@@ -7,21 +7,6 @@ using System.Diagnostics;
 
 namespace CombatForms
 {
-    //Name: Element
-    //Type: enum
-    //Description: determines what element a Skill/Attack is
-    public enum Element
-    {
-        Fire = 0,
-        Ice = 1,
-        Electricity = 2,
-        Force = 3,
-        Dark = 4,
-        Light = 5,
-        Slash = 6,
-        Strike = 7,
-        Pierce = 8,
-    }
     //Name: Player
     //Type: Class
     class Player : IDamageable

@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Column.cs" />
     <Compile Include="Combat.cs" />
+    <Compile Include="Demon.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +57,7 @@
     </Compile>
     <Compile Include="FSM.cs" />
     <Compile Include="ISkill.cs" />
+    <Compile Include="Party.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

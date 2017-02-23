@@ -18,6 +18,12 @@ namespace CombatForms
         private bool Alive;
         private bool Active;
 
+        enum DemonStates
+        {
+            init, idle, attack, dead, exit
+        }
+
+
         public Demon() { }
         public Demon(string n, Stats d, Element w, Element r, Element a)
         {

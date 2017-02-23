@@ -14,6 +14,14 @@ namespace CombatForms
         private Player PlayerSlot;
         private Demon DemonSlot;
 
+        enum ColumnStates
+        {
+            init, enter, select, exit
+        }
+
+        FSM<ColumnStates> ColumnFSM;
+
+
         public Column() { }
         public Column(Player p, Demon d)
         {
