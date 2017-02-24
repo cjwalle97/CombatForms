@@ -36,19 +36,6 @@ namespace CombatForms
             AttackType = a;
             PlayerFSM = new FSM<PlayerStates>();
         }
-
-        public void CheckifAlive()
-        {
-
-        }
-        public void Activate()
-        {
-            Active = true;
-        }
-        public void Deactivate()
-        {
-            Active = false;
-        }
         //Name: IDamageable.Damage
         //Type: void
         //Description: triggers the TakeDamage function
