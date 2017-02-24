@@ -8,6 +8,7 @@ namespace CombatForms
 { 
     //Name: Demon
     //Type: Class
+    //Description: Class that akes up the Demon Unit
     class Demon : IDamageable
     {
         private string Name;
