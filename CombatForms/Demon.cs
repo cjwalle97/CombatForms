@@ -28,7 +28,12 @@ namespace CombatForms
         public Demon() { }
         public Demon(string n, Stats d, Element w, Element r, Element a)
         {
-            Name = n; DemonStats = d; Weakness = w; Resistance = r; AttackType = a;
+            Name = n;
+            DemonStats = d;
+            Weakness = w;
+            Resistance = r;
+            AttackType = a;
+            DemonFSM = new FSM<DemonStates>();
         }
         public void Activate()
         {

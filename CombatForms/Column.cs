@@ -26,6 +26,7 @@ namespace CombatForms
         {
             PlayerSlot = p;
             DemonSlot = d;
+            ColumnFSM = new FSM<ColumnStates>();
         }
     }
 }

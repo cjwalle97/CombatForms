@@ -25,7 +25,10 @@ namespace CombatForms
 
         public Party(Column c, Column r, Column l)
         {
-            Center = c; Right = r; Left = l;
+            Center = c;
+            Right = r;
+            Left = l;
+            PartyFSM = new FSM<PartyStates>();
         }
     }
 }

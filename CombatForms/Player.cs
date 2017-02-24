@@ -29,8 +29,11 @@ namespace CombatForms
         public Player() { }
         public Player(string n, Stats p, Element w, Element r, Element a)
         {
-            Name = n; PlayerStats = p;
-            Weakness = w; Resistance = r; AttackType = a;
+            Name = n;
+            PlayerStats = p;
+            Weakness = w;
+            Resistance = r;
+            AttackType = a;
             PlayerFSM = new FSM<PlayerStates>();
         }
 
