@@ -15,7 +15,7 @@ namespace CombatForms
     }
     //Name: ISkill
     //Type: Interface
-    //Description: 
+    //Description: determines that the class is a skill
     interface ISkill<T>
     {
         void SkillCaster(T caster);
@@ -69,7 +69,7 @@ namespace CombatForms
             Caster = caster;
         }
     }
-    //Name: ForceSkills
+    //Name: Zan
     //Type: class
     //Description: a Skill with the Element of Force that can be used by the Players and Demons
     class Zan<T> : ISkill<T>

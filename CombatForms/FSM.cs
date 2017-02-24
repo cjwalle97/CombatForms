@@ -44,11 +44,8 @@ namespace CombatForms
         private Dictionary<string, List<State>> transitions;
         State cState;
 
-        //GameStart -> TurnStart: Automatic, when the Program starts
         //TurnStart -> PlayerTurn: when a button is pressed
-        //PlayerTurn -> TurnEnd: Automatic, when the code connected to the button executes
         //TurnEnd -> TurnStart: Automatic, when the UI updates
-        // any state -> GameEnd: if either the quit game button is used or all Columns of one party are dead
         public FSM()
         {
             states = new Dictionary<string, State>();

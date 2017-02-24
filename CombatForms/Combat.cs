@@ -28,7 +28,8 @@ namespace CombatForms
     //if either the Hunter or the Demon is "dead" and the Column will from then on be skipped in the turn rotation
     //All Columns will start with the Hunter as the "Active unit"
     //Hunter = Player class
-    //Order: Party1 -> Fastest Party1 Column -> Next Column -> Slowest Column -> Party2 -> Fastest Party2 Column -> Next Column -> Slowest Column. Speed is based on the "Active unit's" Agility
+    //Order: Party1 -> Fastest Party1 Column -> Next Column -> Slowest Column -> Party2 -> 
+    //Fastest Party2 Column -> Next Column -> Slowest Column. Speed is based on the "Active unit's" Agility
     class Combat
     {
         
